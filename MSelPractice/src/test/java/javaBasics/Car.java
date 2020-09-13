@@ -17,5 +17,12 @@ public class Car {
 	{
 		System.out.println("in car fuel");
 	}
+	
+	
+
+	public void colour()
+	{
+		System.out.println("in car colour");
+	}
 
 }
