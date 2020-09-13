@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25" started-at="2020-08-11T02:52:48Z" finished-at="2020-08-11T02:52:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25" started-at="2020-08-11T02:52:48Z" finished-at="2020-08-11T02:52:48Z">
+      <class name="selTestNG.LearningAnnotations">
+        <test-method status="PASS" signature="TestFucn()[pri:0, instance:selTestNG.LearningAnnotations@721e0f4f]" name="TestFucn" duration-ms="9" started-at="2020-08-11T08:22:48Z" finished-at="2020-08-11T08:22:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestFucn -->
+      </class> <!-- selTestNG.LearningAnnotations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
