@@ -1,17 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25" started-at="2020-08-11T02:52:48Z" finished-at="2020-08-11T02:52:48Z">
+  <suite name="Payments" duration-ms="30" started-at="2020-09-19T04:18:57Z" finished-at="2020-09-19T04:18:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25" started-at="2020-08-11T02:52:48Z" finished-at="2020-08-11T02:52:48Z">
-      <class name="selTestNG.LearningAnnotations">
-        <test-method status="PASS" signature="TestFucn()[pri:0, instance:selTestNG.LearningAnnotations@721e0f4f]" name="TestFucn" duration-ms="9" started-at="2020-08-11T08:22:48Z" finished-at="2020-08-11T08:22:48Z">
+    <test name="Transfer" duration-ms="30" started-at="2020-09-19T04:18:57Z" finished-at="2020-09-19T04:18:57Z">
+      <class name="selTestNG.AnnotationsInTestNG">
+        <test-method status="FAIL" signature="testd()[pri:0, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="testd" duration-ms="10" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at selTestNG.AnnotationsInTestNG.testd(AnnotationsInTestNG.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestFucn -->
-      </class> <!-- selTestNG.LearningAnnotations -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testd -->
+        <test-method status="PASS" signature="testm()[pri:0, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="testm" duration-ms="1" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testm -->
+        <test-method status="PASS" signature="tests()[pri:0, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="tests" duration-ms="1" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tests -->
+        <test-method status="PASS" signature="testb()[pri:1, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="testb" duration-ms="1" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testb -->
+        <test-method status="PASS" signature="testa()[pri:2, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="testa" duration-ms="1" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testa -->
+      </class> <!-- selTestNG.AnnotationsInTestNG -->
+    </test> <!-- Transfer -->
+  </suite> <!-- Payments -->
 </testng-results>

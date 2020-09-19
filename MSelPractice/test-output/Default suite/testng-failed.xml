@@ -3,7 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="selTestNG.LearningAnnotations"/>
+      <class name="selTestNG.AnnotationsInTestNG"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="selTestNG.AnnotationsInTestNG">
+        <methods>
+          <include name="testd"/>
+        </methods>
+      </class> <!-- selTestNG.AnnotationsInTestNG -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
