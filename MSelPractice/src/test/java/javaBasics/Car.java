@@ -24,5 +24,10 @@ public class Car {
 	{
 		System.out.println("in car colour");
 	}
+	
+	public void colour1()
+	{
+		System.out.println("in car colour1");
+	}
 
 }
