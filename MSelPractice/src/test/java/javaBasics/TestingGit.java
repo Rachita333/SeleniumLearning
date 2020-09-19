@@ -7,6 +7,8 @@ public class TestingGit {
 
 		System.out.println("Testing checkin in Git");
 		
+		System.out.println("Testing checkin in Gi1t");
+		
 	}
 
 }
