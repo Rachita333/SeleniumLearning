@@ -3,16 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="selTestNG.AnnotationsInTestNG"/>
+      <class name="selTestNG.TestMultiplefile">
+        <methods>
+          <include name="search"/>
+        </methods>
+      </class> <!-- selTestNG.TestMultiplefile -->
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
-    <classes>
-      <class name="selTestNG.AnnotationsInTestNG">
-        <methods>
-          <include name="testd"/>
-        </methods>
-      </class> <!-- selTestNG.AnnotationsInTestNG -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

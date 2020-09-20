@@ -4,13 +4,28 @@
   <test name="Transfer">
     <classes>
       <class name="selTestNG.AnnotationsInTestNG"/>
+      <class name="selTestNG.TestMultiplefile"/>
     </classes>
   </test> <!-- Transfer -->
   <test name="Transfer(failed)">
     <classes>
+      <class name="selTestNG.TestMultiplefile">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- selTestNG.TestMultiplefile -->
       <class name="selTestNG.AnnotationsInTestNG">
         <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
           <include name="testd"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- selTestNG.AnnotationsInTestNG -->
     </classes>

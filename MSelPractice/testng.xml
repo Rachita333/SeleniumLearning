@@ -4,6 +4,7 @@
   <test name="Transfer">
     <classes>
       <class name="selTestNG.AnnotationsInTestNG"/>
+       <class name="selTestNG.TestMultiplefile"/>
     </classes>
   </test> <!-- Transfer -->
 </suite> <!-- Payments -->

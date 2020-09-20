@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="1" total="9" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Payments" duration-ms="30" started-at="2020-09-19T04:18:57Z" finished-at="2020-09-19T04:18:57Z">
+  <suite name="Payments" duration-ms="45" started-at="2020-09-20T03:39:54Z" finished-at="2020-09-20T03:39:54Z">
     <groups>
     </groups>
-    <test name="Transfer" duration-ms="30" started-at="2020-09-19T04:18:57Z" finished-at="2020-09-19T04:18:57Z">
+    <test name="Transfer" duration-ms="45" started-at="2020-09-20T03:39:54Z" finished-at="2020-09-20T03:39:54Z">
       <class name="selTestNG.AnnotationsInTestNG">
-        <test-method status="FAIL" signature="testd()[pri:0, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="testd" duration-ms="10" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeSuite" is-config="true" duration-ms="10" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="FAIL" signature="testd()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="testd" duration-ms="8" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -16,7 +28,7 @@
               <![CDATA[java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.fail(Assert.java:101)
-	at selTestNG.AnnotationsInTestNG.testd(AnnotationsInTestNG.java:41)
+	at selTestNG.AnnotationsInTestNG.testd(AnnotationsInTestNG.java:79)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -47,23 +59,101 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testd -->
-        <test-method status="PASS" signature="testm()[pri:0, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="testm" duration-ms="1" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testm()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="testm" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testm -->
-        <test-method status="PASS" signature="tests()[pri:0, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="tests" duration-ms="1" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tests()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="tests" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tests -->
-        <test-method status="PASS" signature="testb()[pri:1, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="testb" duration-ms="1" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testb()[pri:1, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="testb" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testb -->
-        <test-method status="PASS" signature="testa()[pri:2, instance:selTestNG.AnnotationsInTestNG@4563e9ab]" name="testa" duration-ms="1" started-at="2020-09-19T09:48:57Z" finished-at="2020-09-19T09:48:57Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testa()[pri:2, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="testa" duration-ms="2" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testa -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterClass" is-config="true" duration-ms="3" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:55Z" finished-at="2020-09-20T09:09:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- selTestNG.AnnotationsInTestNG -->
+      <class name="selTestNG.TestMultiplefile">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="addKart()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="addKart" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addKart -->
+        <test-method status="PASS" signature="login()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="login" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="payment()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="payment" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- payment -->
+        <test-method status="PASS" signature="search()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="search" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- selTestNG.TestMultiplefile -->
     </test> <!-- Transfer -->
   </suite> <!-- Payments -->
 </testng-results>
