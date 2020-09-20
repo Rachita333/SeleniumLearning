@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Payments]">
-  <test name="Transfer">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="selTestNG.AnnotationsInTestNG"/>
-      <class name="selTestNG.TestMultiplefile"/>
+      <class name="selTestNG.DependsOnMethodConceptInTestNG"/>
     </classes>
-  </test> <!-- Transfer -->
-  <test name="Transfer(failed)">
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
     <classes>
-      <class name="selTestNG.TestMultiplefile">
+      <class name="selTestNG.DependsOnMethodConceptInTestNG">
         <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="loadFacebookURL"/>
+          <include name="registerOnFacebook"/>
+          <include name="postStatusOnFacebook"/>
         </methods>
-      </class> <!-- selTestNG.TestMultiplefile -->
-      <class name="selTestNG.AnnotationsInTestNG">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-          <include name="afterSuite"/>
-          <include name="testd"/>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- selTestNG.AnnotationsInTestNG -->
+      </class> <!-- selTestNG.DependsOnMethodConceptInTestNG -->
     </classes>
-  </test> <!-- Transfer(failed) -->
-</suite> <!-- Failed suite [Payments] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

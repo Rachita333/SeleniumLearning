@@ -1,25 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="9" passed="8">
+<testng-results skipped="2" failed="1" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Payments" duration-ms="45" started-at="2020-09-20T03:39:54Z" finished-at="2020-09-20T03:39:54Z">
+  <suite name="Default suite" duration-ms="32" started-at="2020-09-20T04:22:13Z" finished-at="2020-09-20T04:22:13Z">
     <groups>
     </groups>
-    <test name="Transfer" duration-ms="45" started-at="2020-09-20T03:39:54Z" finished-at="2020-09-20T03:39:54Z">
-      <class name="selTestNG.AnnotationsInTestNG">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeSuite" is-config="true" duration-ms="10" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeTest" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="FAIL" signature="testd()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="testd" duration-ms="8" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+    <test name="Default test" duration-ms="32" started-at="2020-09-20T04:22:13Z" finished-at="2020-09-20T04:22:13Z">
+      <class name="selTestNG.DependsOnMethodConceptInTestNG">
+        <test-method status="FAIL" signature="loadFacebookURL()[pri:0, instance:selTestNG.DependsOnMethodConceptInTestNG@4563e9ab]" name="loadFacebookURL" duration-ms="12" started-at="2020-09-20T09:52:13Z" finished-at="2020-09-20T09:52:13Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -28,7 +16,7 @@
               <![CDATA[java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.fail(Assert.java:101)
-	at selTestNG.AnnotationsInTestNG.testd(AnnotationsInTestNG.java:79)
+	at selTestNG.DependsOnMethodConceptInTestNG.loadFacebookURL(DependsOnMethodConceptInTestNG.java:12)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -58,102 +46,68 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testd -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+        </test-method> <!-- loadFacebookURL -->
+        <test-method status="SKIP" signature="registerOnFacebook()[pri:0, instance:selTestNG.DependsOnMethodConceptInTestNG@4563e9ab]" name="registerOnFacebook" duration-ms="0" started-at="2020-09-20T09:52:13Z" depends-on-methods="selTestNG.DependsOnMethodConceptInTestNG.loadFacebookURL" finished-at="2020-09-20T09:52:13Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependsOnMethodConceptInTestNG.registerOnFacebook()[pri:0, instance:selTestNG.DependsOnMethodConceptInTestNG@4563e9ab] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependsOnMethodConceptInTestNG.registerOnFacebook()[pri:0, instance:selTestNG.DependsOnMethodConceptInTestNG@4563e9ab] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
+        </test-method> <!-- registerOnFacebook -->
+        <test-method status="SKIP" signature="postStatusOnFacebook()[pri:0, instance:selTestNG.DependsOnMethodConceptInTestNG@4563e9ab]" name="postStatusOnFacebook" duration-ms="0" started-at="2020-09-20T09:52:13Z" depends-on-methods="selTestNG.DependsOnMethodConceptInTestNG.registerOnFacebook" finished-at="2020-09-20T09:52:13Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method DependsOnMethodConceptInTestNG.postStatusOnFacebook()[pri:0, instance:selTestNG.DependsOnMethodConceptInTestNG@4563e9ab] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method DependsOnMethodConceptInTestNG.postStatusOnFacebook()[pri:0, instance:selTestNG.DependsOnMethodConceptInTestNG@4563e9ab] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1039)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testm()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="testm" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testm -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tests()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="tests" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tests -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testb()[pri:1, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="testb" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testb -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testa()[pri:2, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="testa" duration-ms="2" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testa -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterClass" is-config="true" duration-ms="3" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:selTestNG.AnnotationsInTestNG@2c8d66b2]" name="afterSuite" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:55Z" finished-at="2020-09-20T09:09:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- selTestNG.AnnotationsInTestNG -->
-      <class name="selTestNG.TestMultiplefile">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="addKart()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="addKart" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addKart -->
-        <test-method status="PASS" signature="login()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="login" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="payment()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="payment" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- payment -->
-        <test-method status="PASS" signature="search()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="search" duration-ms="1" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:selTestNG.TestMultiplefile@5a39699c]" name="afterClass" is-config="true" duration-ms="0" started-at="2020-09-20T09:09:54Z" finished-at="2020-09-20T09:09:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- selTestNG.TestMultiplefile -->
-    </test> <!-- Transfer -->
-  </suite> <!-- Payments -->
+        </test-method> <!-- postStatusOnFacebook -->
+      </class> <!-- selTestNG.DependsOnMethodConceptInTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
