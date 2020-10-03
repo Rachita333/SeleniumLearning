@@ -3,7 +3,7 @@
 <suite name="GridSuite" parallel="tests">
 	<test name="FFTest">
 		<parameter name="portNo" value="4545"></parameter>
-		<parameter name="appURL" value="http://demo.guru99.com/selenium/newtours/"></parameter>
+		<parameter name="appURL" value="https://www.google.com/"></parameter>
 		<classes>
 			<class name="selGrid.TestGrid" />
 		</classes>

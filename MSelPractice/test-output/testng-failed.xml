@@ -5,7 +5,7 @@
   <parameter name="appURL" value="http://demo.guru99.com/selenium/newtours/"/>
   <test name="FFTest">
     <parameter name="portNo" value="4545"/>
-    <parameter name="appURL" value="http://demo.guru99.com/selenium/newtours/"/>
+    <parameter name="appURL" value="https://www.google.com/"/>
     <classes>
       <class name="selGrid.TestGrid"/>
     </classes>
@@ -17,4 +17,19 @@
       <class name="selGrid.TestGrid"/>
     </classes>
   </test> <!-- ChromeTest -->
+  <test name="FFTest(failed)" parallel="tests">
+    <parameter name="portNo" value="4545"/>
+    <parameter name="appURL" value="https://www.google.com/"/>
+    <classes>
+      <class name="selGrid.TestGrid">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- selGrid.TestGrid -->
+    </classes>
+  </test> <!-- FFTest(failed) -->
 </suite> <!-- Failed suite [GridSuite] -->
