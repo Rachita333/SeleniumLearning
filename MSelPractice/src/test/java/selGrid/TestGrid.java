@@ -31,7 +31,7 @@ public class TestGrid {
 	{
 		if(portNo.equalsIgnoreCase("4546"))
 		{
-			nodeURL = "http://192.168.1.104:4546/wd/hub";
+			nodeURL = "http://192.168.1.100:4546/wd/hub";
 			System.out.println("Executing on Chrome");
 			//desired cap
 			DesiredCapabilities cap = new DesiredCapabilities();
@@ -50,7 +50,7 @@ public class TestGrid {
 		else
 		if(portNo.equalsIgnoreCase("4545"))
 		{
-			nodeURL = "http://192.168.1.104:4545/wd/hub";
+			nodeURL = "http://192.168.1.100:4545/wd/hub";
 			System.out.println("Executing on Firefox");
 			//desired cap
 			DesiredCapabilities cap = new DesiredCapabilities();
@@ -78,7 +78,7 @@ public class TestGrid {
 			WebElement password =driver.findElement(By.name("password"));
 			password.sendKeys("Mercury");
 			
-			WebElement signInBtn =driver.findElement(By.name("login"));
+			WebElement signInBtn =driver.findElement(By.name("submit"));
 			signInBtn.click();
 			
 			if(driver.getPageSource().contains("Welcome back to Mercury Tours!"))
